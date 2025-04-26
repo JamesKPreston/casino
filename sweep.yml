@@ -1,0 +1,24 @@
+# Sweep AI turns bug fixes & feature requests into code changes (https://sweep.dev)
+# For details, see https://docs.sweep.dev/usage/config
+
+# Which branch to base PRs from and merge into
+branch: 'main'                      # default is 'main' :contentReference[oaicite:0]{index=0}
+
+# Whether Sweep should read your GitHub Actions logs/output
+gha_enabled: True                   # default is true :contentReference[oaicite:1]{index=1}
+
+# A short description to guide Sweep’s AI when creating PRs
+description: >
+  Flutter app using Dart & Flutter best practices.
+  Focus on code under lib/ and tests/, adhere to Flutter’s style guidelines.
+                                      # customize for your project :contentReference[oaicite:2]{index=2}
+
+# Create PRs as drafts? (draft PRs won’t trigger Actions)
+draft: False                        # default is false :contentReference[oaicite:3]{index=3}
+
+# Directories you don’t want Sweep touching
+blocked_dirs:
+  - ".github/"                      # don’t modify your workflow files :contentReference[oaicite:4]{index=4}
+  - "android/"                      
+  - "ios/"                          
+  - "build/"                        
